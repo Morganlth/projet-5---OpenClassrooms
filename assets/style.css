@@ -131,11 +131,13 @@ body
 .gallery .nav {
 	justify-content: center;
 }
-/*? changement '.nav-link.active' => '.nav-link.active-tag' + suppression couleur #fff => = meilleur contraste */
+/*? changement '.nav-link.active' => '.nav-link.active-tag' + suppression couleur #fff => = meilleur contraste + ajout cursor pointer */
 .nav-pills .nav-link.active-tag, .nav-pills .show > .nav-link {
 	/* color: #000; */
 	background-color: #BEB45A;
-	border-radius:0 ;
+	border-radius: 0;
+
+	cursor: pointer;
 }
 .nav-pills .nav-link {
 	color: #000
