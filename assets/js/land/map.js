@@ -18,12 +18,16 @@ export const map = {
 ,
     reader: () =>
     {
+        const body = document.querySelector('body')
+
         STACK.forEach(s =>
         {
             const height = s.pushers.reduce((accumulator, pusher) => accumulator + pusher.add, 0)
 
             s.element.style.transform = `translateY(${height}px)`
         })
+
+        body.style.height = 'auto', body.style.height = body.scrollHeight + 'px'
     }
 }
 
