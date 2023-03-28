@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+
+<!--? ajout de lang-->
+<html lang="fr">
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta charset="UTF-8">
+		<!--? ajout balise meta verification google-->
+		<meta name="google-site-verification" content="WBxjjkIPOVdacjshSTSYUSwyi4vD8CZPqM1I0hinwOA">
+		<!--? ajout d'une balise meta description-->
+		<meta name="description" content="
+		Photographe - Photographies Bordeaux - Saisissez ces merveilleux moments au travers de mon regard et de ma technique.
+		Rendez les intemporels grâce à la photo, pour se les remémorer.">
+		<!--? ajout des balises meta OG -->
+		<meta property="og:title" content="Nina Carducci - photographe">
+		<meta property="og:type" content="website">
+		<meta property="og:description" content="
+		Photographe - Photographies Bordeaux - Saisissez ces merveilleux moments au travers de mon regard et de ma technique.
+		Rendez les intemporels grâce à la photo, pour se les remémorer.">
+		<meta property="og:locale" content="fr_FR">
+		<meta property="og:image" content="./assets/images/nina-meta.png">
+		<meta property="og:image:type" content="image/png">
+		<meta property="og:image:width" content="1200">
+		<meta property="og:image:height" content="627">
+		<meta property="og:image:alt" content="Nina Carducci - photographe">
+		<!--? ajout des balises meta Twitter -->
+		<meta name="twitter:card" content="summary_large_image">
+		<meta name="twitter:site" content="@Nina-Carducci-photographe">
+		<meta name="twitter:creator" content="@Nina-Carducci">
+		<meta name="twitter:title" content="Nina Carducci - photographe">
+		<meta name="twitter:description" content="
+		Photographe - Photographies Bordeaux - Saisissez ces merveilleux moments au travers de mon regard et de ma technique.
+		Rendez les intemporels grâce à la photo, pour se les remémorer.">
+		<meta name="twitter:image" content="./assets/images/nina-meta.png">
+		
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Inter&family=Spectral:ital,wght@0,400;1,300;1,400;1,800&display=block" rel="stylesheet"> <!--? display-swap en display-block -->
+
+		<link rel="stylesheet" href="./assets/bootstrap/bootstrap.min.css">
+		<link rel="stylesheet" href="./assets/style.css">
+
+		<title>Nina Carducci - photographe</title>
+	</head>
+
+	<body itemscope itemtype="https://schema.org/LocalBusiness">
+		<header class="top-header"> <!--? header a la place de div-->
+			<a href="./index.html"> <!--? Ajout d'un lien pour reload page-->
+				<h1 class="name" itemprop="name">Nina Carducci</h1> <!--? h1 a la place de h3-->
+			</a>
+		
+			<nav class="nav"> <!--? nav a la place de div-->
+				<ul>
+					<li><a href="#about">À propos</a></li>
+					<li><a href="#gallery">Galerie</a></li>
+					<li><a href="#services">Service</a></li>
+					<li><a href="#contact">Contact</a></li>
+					<li>
+						<a class="social-link" href="https://www.instagram.com/ninacarducci.photo/?hl=fr" target="_blank">
+							<img src="assets/images/instagram.png" alt="Instagram" width="20" height="20"> <!--? redimensionnement 40px -> 20px + ajout attribut alt, width et height-->
+						</a>
+					</li>
+				</ul>
+			</nav>
+		</header>
+
+		<main> <!--? ajout d'un main-->
+			<div id="header" class="position-relative"> <!--? déplacement dans le main + ajout class "position-relative" -->
+				<div id="carouselExampleIndicators" class="carousel slide position-absolute w-100" data-bs-ride="carousel"> <!--? ajout class "position-absolute" & "w-100" -->
+					<nav class="carousel-indicators">  <!--?nav a la place de div - a verifier-->
+						<button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+						<button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+						<button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+					</nav>
+	
+					<div class="carousel-inner" itemscope itemtype="https://schema.org/ImageGallery" itemprop="subjectOf">
+						<div class="carousel-item position-absolute active"> <!--? ajout de position absolute class -->
+							<!--? redimensionnement + ajout attribut alt, srcset, width et height-->
+							<img srcset="
+							./assets/images/slider/ryoji-iwata-wUZjnOv7t0g-unsplash.jpg 1920w,
+							./assets/images/slider/ryoji-iwata-wUZjnOv7t0g-unsplash-1440.jpg 1440w,
+							./assets/images/slider/ryoji-iwata-wUZjnOv7t0g-unsplash-1024.jpg 1024w,
+							./assets/images/slider/ryoji-iwata-wUZjnOv7t0g-unsplash-768.jpg 768w,
+							./assets/images/slider/ryoji-iwata-wUZjnOv7t0g-unsplash-425.jpg 425w"
+							sizes="(min-width: 1441px) 1920px, (min-width: 1025px) 1440px, (min-width: 769px) 1024px, (min-width: 426px) 768px, 425px"
+							src="./assets/images/slider/ryoji-iwata-wUZjnOv7t0g-unsplash.jpg" class="d-block w-100" alt="Ryoji Iwata" width="1920" height="888" itemprop="image">
+						</div>
+						<div class="carousel-item position-absolute"> <!--? ajout de position absolute class -->
+							<!--? redimensionnement + ajout attribut alt, srcset, width et height-->
+							<img srcset="
+							./assets/images/slider/nicholas-green-nPz8akkUmDI-unsplash.jpg 1920w,
+							./assets/images/slider/nicholas-green-nPz8akkUmDI-unsplash-1440.jpg 1440w,
+							./assets/images/slider/nicholas-green-nPz8akkUmDI-unsplash-1024.jpg 1024w,
+							./assets/images/slider/nicholas-green-nPz8akkUmDI-unsplash-768.jpg 768w,
+							./assets/images/slider/nicholas-green-nPz8akkUmDI-unsplash-425.jpg 425w"
+							sizes="(min-width: 1441px) 1920px, (min-width: 1025px) 1440px, (min-width: 769px) 1024px, (min-width: 426px) 768px, 425px"
+							src="./assets/images/slider/nicholas-green-nPz8akkUmDI-unsplash.jpg" class="d-block w-100" alt="Nicholas Green" width="1920" height="888" itemprop="image">
+						</div>
+						<div class="carousel-item position-absolute"> <!--? ajout de position absolute class -->
+							<!--? redimensionnement + ajout attribut alt, srcset, width et height-->
+							<img srcset="
+							./assets/images/slider/edward-cisneros-3_h6-1NPDGw-unsplash.jpg 1920w,
+							./assets/images/slider/edward-cisneros-3_h6-1NPDGw-unsplash-1440.jpg 1440w,
+							./assets/images/slider/edward-cisneros-3_h6-1NPDGw-unsplash-1024.jpg 1024w,
+							./assets/images/slider/edward-cisneros-3_h6-1NPDGw-unsplash-768.jpg 768w,
+							./assets/images/slider/edward-cisneros-3_h6-1NPDGw-unsplash-425.jpg 425w"
+							sizes="(min-width: 1441px) 1920px, (min-width: 1025px) 1440px, (min-width: 769px) 1024px, (min-width: 426px) 768px, 425px"
+							src="./assets/images/slider/edward-cisneros-3_h6-1NPDGw-unsplash.jpg" class="d-block w-100" alt="Edward Cisneros" width="1920" height="888" itemprop="image">
+						</div>
+
+						<button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev" aria-label="prev">
+							<!--? remplacement des spans bootstrap (image trop grande) par des icons personnalisées-->
+							<img src="./assets/images/icons/carousel-control-prev-icon.svg" alt="prev button" width="16" height="27">
+						</button>
+						<button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next" aria-label="next">
+							<!--? remplacement des spans bootstrap (image trop grande) par des icons personnalisées-->
+							<img src="./assets/images/icons/carousel-control-next-icon.svg" alt="next button" width="16" height="27">
+						</button>
+					</div>
+				</div>
+			</div>
+		
+			<div id="about" class="after-slider">
+				<picture class="picture left"> <!--? remplacement de div par picture + redimensionnement img + ajout attribut alt, srcset, sizes, width et height-->
+					<source media="(min-width: 1180px)" srcset="./assets/images/nina.png 560w" sizes="560px"> <!--! déclenchement gros layout shift-->
+					<source media="(min-width: 650px)" srcset="./assets/images/nina-420.png 420w" sizes="420px">
+					<source media="(max-width: 650px)" srcset="./assets/images/nina-224.png 224w" sizes="224px">
+					<img srcset="
+					./assets/images/nina.png 560w,
+					./assets/images/nina-420.png 420w,
+					./assets/images/nina-224.png 224w"
+					sizes="(min-width: 1180px) 559px, (min-width: 650px) 419px, 223px"
+					src="./assets/images/nina.png" alt="moi - Nina Carducci" width="560" height="558" itemprop="image">
+				</picture>
+		
+				<article id="about-me" itemprop="description"> <!--? article a la place de div-->
+					<h2 class="about-me__title">À propos de moi</h2> <!--? h2 a la place de h3-->
+					<p class="about-me__introduction"> <!--? p a la place de h6-->
+						Devenir photographe était pour moi une évidence. Comme si j’y étais prédestiné. Saisir un moment, une émotion, une situation, un endroit, une lumière et les rendre immortels,
+						voilà ce qui me fait vibrer.
+					</p>
+
+					<p>
+						Nous passons notre vie à chercher le bonheur, et lorsque nous y touchons, nous n’avons qu’une envie : le figer au travers de photographies pour le savourer avec les personnes
+						qui sont importantes à nos yeux, ou le partager au plus grand nombre.
+						C’est ce que je vous propose : saisir ces merveilleux moments au travers de mon regard, mon approche, ma technique. Rendre ces moments immortels, afin que vous puissiez y 
+						puiser de l’amour, du bonheur, de la tendresse et de lumière à chaque fois que vous poserez les yeux sur vos photos.
+					</p>
+				</article>
+			</div>
+
+			<section id="gallery" class="after-slider" itemscope itemtype="https://schema.org/ImageGallery" itemprop="subjectOf"> <!--? section a la place de div-->
+				<h2 class="title" itemprop="name">Portfolio</h2> <!--? h2 a la place de h3-->
+			
+				<div class="container py-3 position-relative"> <!--? class position-relative-->
+					<!--? redimensionnement + ajout attribut alt, srcset, sizes, width et height + class position-absolute + suppression du style "diplay: none"-->
+					<div class="gallery position-absolute top-0 start-0 w-100">
+						<img data-gallery-tag="Concert" class="gallery-item"
+						srcset="
+						./assets/images/gallery/concerts/aaron-paul-wnX-fXzB6Cw-unsplash-424.jpg 424w,
+						./assets/images/gallery/concerts/aaron-paul-wnX-fXzB6Cw-unsplash-364.jpg 364w,
+						./assets/images/gallery/concerts/aaron-paul-wnX-fXzB6Cw-unsplash-304.jpg 304w,
+						./assets/images/gallery/concerts/aaron-paul-wnX-fXzB6Cw-unsplash-224.jpg 224w,
+						./assets/images/gallery/concerts/aaron-paul-wnX-fXzB6Cw-unsplash-254.jpg 254w"
+						sizes="(min-width: 1400px) 423px, (min-width: 1200px) 363px, (min-width: 992px) 303px, (min-width: 768px) 223px, (min-width: 576px) 253px, 423px"
+						src="./assets/images/gallery/concerts/aaron-paul-wnX-fXzB6Cw-unsplash.jpg"
+						alt="Aaron Paul Concert" width="424" height="424" itemprop="image">
+						<img data-gallery-tag="Entreprises" class="gallery-item"
+						srcset="
+						./assets/images/gallery/entreprise/ali-morshedlou-WMD64tMfc4k-unsplash-424.jpg 424w,
+						./assets/images/gallery/entreprise/ali-morshedlou-WMD64tMfc4k-unsplash-364.jpg 364w,
+						./assets/images/gallery/entreprise/ali-morshedlou-WMD64tMfc4k-unsplash-304.jpg 304w,
+						./assets/images/gallery/entreprise/ali-morshedlou-WMD64tMfc4k-unsplash-224.jpg 224w,
+						./assets/images/gallery/entreprise/ali-morshedlou-WMD64tMfc4k-unsplash-254.jpg 254w"
+						sizes="(min-width: 1400px) 423px, (min-width: 1200px) 363px, (min-width: 992px) 303px, (min-width: 768px) 223px, (min-width: 576px) 253px, 423px"
+						src="./assets/images/gallery/entreprise/ali-morshedlou-WMD64tMfc4k-unsplash.jpg"
+						alt="Ali Morshedlou entreprise" width="424" height="424" itemprop="image">
+						<img data-gallery-tag="Entreprises" class="gallery-item"
+						srcset="
+						./assets/images/gallery/entreprise/jason-goodman-tHO1_OuKbg0-unsplash-424.jpg 424w,
+						./assets/images/gallery/entreprise/jason-goodman-tHO1_OuKbg0-unsplash-364.jpg 364w,
+						./assets/images/gallery/entreprise/jason-goodman-tHO1_OuKbg0-unsplash-304.jpg 304w,
+						./assets/images/gallery/entreprise/jason-goodman-tHO1_OuKbg0-unsplash-224.jpg 224w,
+						./assets/images/gallery/entreprise/jason-goodman-tHO1_OuKbg0-unsplash-254.jpg 254w"
+						sizes="(min-width: 1400px) 423px, (min-width: 1200px) 363px, (min-width: 992px) 303px, (min-width: 768px) 223px, (min-width: 576px) 253px, 423px"
+						src="./assets/images/gallery/entreprise/jason-goodman-tHO1_OuKbg0-unsplash.jpg"
+						alt="Jason Goodman entreprise" width="424" height="424" itemprop="image">
+						<img data-gallery-tag="Mariages" class="gallery-item"
+						srcset="
+						./assets/images/gallery/mariage/hannah-busing-RvF2R_qMpRk-unsplash-424.jpg 424w,
+						./assets/images/gallery/mariage/hannah-busing-RvF2R_qMpRk-unsplash-364.jpg 364w,
+						./assets/images/gallery/mariage/hannah-busing-RvF2R_qMpRk-unsplash-304.jpg 304w,
+						./assets/images/gallery/mariage/hannah-busing-RvF2R_qMpRk-unsplash-224.jpg 224w,
+						./assets/images/gallery/mariage/hannah-busing-RvF2R_qMpRk-unsplash-254.jpg 254w"
+						sizes="(min-width: 1400px) 423px, (min-width: 1200px) 363px, (min-width: 992px) 303px, (min-width: 768px) 223px, (min-width: 576px) 253px, 423px"
+						src="./assets/images/gallery/mariage/hannah-busing-RvF2R_qMpRk-unsplash.jpg"
+						alt="Hannah Busing mariage" width="424" height="424" itemprop="image">
+						<img data-gallery-tag="Portrait" class="gallery-item"
+						srcset="
+						./assets/images/gallery/portraits/ade-tunji-rVkhWWZFAtQ-unsplash-424.jpg 424w,
+						./assets/images/gallery/portraits/ade-tunji-rVkhWWZFAtQ-unsplash-364.jpg 364w,
+						./assets/images/gallery/portraits/ade-tunji-rVkhWWZFAtQ-unsplash-304.jpg 304w,
+						./assets/images/gallery/portraits/ade-tunji-rVkhWWZFAtQ-unsplash-224.jpg 224w,
+						./assets/images/gallery/portraits/ade-tunji-rVkhWWZFAtQ-unsplash-254.jpg 254w"
+						sizes="(min-width: 1400px) 423px, (min-width: 1200px) 363px, (min-width: 992px) 303px, (min-width: 768px) 223px, (min-width: 576px) 253px, 423px"
+						src="./assets/images/gallery/portraits/ade-tunji-rVkhWWZFAtQ-unsplash.jpg"
+						alt="Ade Tunji portrait" width="424" height="424" itemprop="image">
+						<img data-gallery-tag="Mariages" class="gallery-item"
+						srcset="
+						./assets/images/gallery/mariage/jakob-owens-SiniLJkXhMc-unsplash-424.jpg 424w,
+						./assets/images/gallery/mariage/jakob-owens-SiniLJkXhMc-unsplash-364.jpg 364w,
+						./assets/images/gallery/mariage/jakob-owens-SiniLJkXhMc-unsplash-304.jpg 304w,
+						./assets/images/gallery/mariage/jakob-owens-SiniLJkXhMc-unsplash-224.jpg 224w,
+						./assets/images/gallery/mariage/jakob-owens-SiniLJkXhMc-unsplash-254.jpg 254w"
+						sizes="(min-width: 1400px) 423px, (min-width: 1200px) 363px, (min-width: 992px) 303px, (min-width: 768px) 223px, (min-width: 576px) 253px, 423px"
+						src="./assets/images/gallery/mariage/jakob-owens-SiniLJkXhMc-unsplash.jpg"
+						alt="Jakob Owens mariage" width="424" height="424" itemprop="image">
+						<img data-gallery-tag="Portrait" class="gallery-item"
+						srcset="
+						./assets/images/gallery/portraits/nino-van-prattenburg--443cl1uR_8-unsplash-424.jpg 424w,
+						./assets/images/gallery/portraits/nino-van-prattenburg--443cl1uR_8-unsplash-364.jpg 364w,
+						./assets/images/gallery/portraits/nino-van-prattenburg--443cl1uR_8-unsplash-304.jpg 304w,
+						./assets/images/gallery/portraits/nino-van-prattenburg--443cl1uR_8-unsplash-224.jpg 224w,
+						./assets/images/gallery/portraits/nino-van-prattenburg--443cl1uR_8-unsplash-254.jpg 254w"
+						sizes="(min-width: 1400px) 423px, (min-width: 1200px) 363px, (min-width: 992px) 303px, (min-width: 768px) 223px, (min-width: 576px) 253px, 423px"
+						src="./assets/images/gallery/portraits/nino-van-prattenburg--443cl1uR_8-unsplash.jpg"
+						alt="Nino Van Prattenburg portrait" width="424" height="424" itemprop="image">
+						<img data-gallery-tag="Concert" class="gallery-item"
+						srcset="
+						./assets/images/gallery/concerts/austin-neill-hgO1wFPXl3I-unsplash-424.jpg 424w,
+						./assets/images/gallery/concerts/austin-neill-hgO1wFPXl3I-unsplash-364.jpg 364w,
+						./assets/images/gallery/concerts/austin-neill-hgO1wFPXl3I-unsplash-304.jpg 304w,
+						./assets/images/gallery/concerts/austin-neill-hgO1wFPXl3I-unsplash-224.jpg 224w,
+						./assets/images/gallery/concerts/austin-neill-hgO1wFPXl3I-unsplash-254.jpg 254w"
+						sizes="(min-width: 1400px) 423px, (min-width: 1200px) 363px, (min-width: 992px) 303px, (min-width: 768px) 223px, (min-width: 576px) 253px, 423px"
+						src="./assets/images/gallery/concerts/austin-neill-hgO1wFPXl3I-unsplash.jpg"
+						alt="Austin Neill concert" width="424" height="424" itemprop="image">
+						<img data-gallery-tag="Entreprises" class="gallery-item"
+						srcset="
+						./assets/images/gallery/entreprise/mateus-campos-felipe-Fsgzm8N0hIY-unsplash-424.jpg 424w,
+						./assets/images/gallery/entreprise/mateus-campos-felipe-Fsgzm8N0hIY-unsplash-364.jpg 364w,
+						./assets/images/gallery/entreprise/mateus-campos-felipe-Fsgzm8N0hIY-unsplash-304.jpg 304w,
+						./assets/images/gallery/entreprise/mateus-campos-felipe-Fsgzm8N0hIY-unsplash-224.jpg 224w,
+						./assets/images/gallery/entreprise/mateus-campos-felipe-Fsgzm8N0hIY-unsplash-254.jpg 254w"
+						sizes="(min-width: 1400px) 423px, (min-width: 1200px) 363px, (min-width: 992px) 303px, (min-width: 768px) 223px, (min-width: 576px) 253px, 423px"
+						src="./assets/images/gallery/entreprise/mateus-campos-felipe-Fsgzm8N0hIY-unsplash.jpg"
+						alt="Mateus Campos Felipe entreprise" width="424" height="424" itemprop="image">
+					</div>
+				</div>
+
+				<article class="quote after-gallery"> <!--? article a la place de div + class after-gallery-->
+					<figure itemscope itemtype="https://schema.org/Quotation" itemprop="subjectOf">
+						<blockquote>
+							<h2 class="quote__text h1" itemprop="citation"> <!--? h1 en h2 + class "h1"-->
+								Un portrait n’est pas une ressemblance. Dès lors qu’une émotion ou qu’un fait est traduit en photo, il cesse d’être un fait pour devenir une opinion.
+								L’inexactitude n’existe pas en photographie. Toutes les photos sont exactes. Aucune d’elles n’est la vérité.
+							</h2>
+						</blockquote>
+						<figcaption class="quote__author" itemprop="author">- Richard Avedon</figcaption>
+					</figure>
+				</article>
+			</section>
+
+			<section id="services" class="after-slider after-gallery"> <!--? section a la place de div + class after-gallery-->
+				<h2 class="title">Mes services</h2> <!--? h2 a la place de h3-->
+
+				<div class="container">
+					<article class="service" itemscope itemtype="https://schema.org/Offer" itemprop="makesOffer"> <!--? article a la place de div-->
+						<div class="service__description">
+							<h3 itemprop="itemOffered">Shooting photo</h3>
+							<p itemprop="description">Pour capturer vos moments les plus précieux et garder un souvenir impérissable. Je me déplace en Île-de-France pour réaliser vos photos</p>
+						</div>
+
+						<div class="service__price" itemscope itemtype="https://schema.org/PriceSpecification" itemprop="priceSpecification">
+							<h4 itemprop="price">350€/demi journée</h4>
+							<span itemprop="description">Matériel, déplacement inclus</span>
+						</div>
+					</article>
+
+					<article class="service" itemscope itemtype="https://schema.org/Offer" itemprop="makesOffer"> <!--? article a la place de div-->
+						<div class="service__description">
+							<h3 itemprop="itemOffered">Retouches</h3>
+							<p itemprop="description">Vous souhaitez retoucher vos photos pour un résultat professionnel ? Bénéficier d’un rendu optimal pour vos publications</p>
+						</div>
+
+						<div class="service__price" itemscope itemtype="https://schema.org/PriceSpecification" itemprop="priceSpecification">
+							<h4 itemprop="price">50€/photo</h4>
+							<span itemprop="description">2 AR par photo</span>
+						</div>
+					</article>
+
+					<article class="service" itemscope itemtype="https://schema.org/Offer" itemprop="makesOffer"> <!--? article a la place de div-->
+						<div class="service__description">
+							<h3 itemprop="itemOffered">Album photos</h3>
+							<p itemprop="description">Partagez avec vos proches et vos clients les photos des moments partagés ensemble à travers un album photo personnalisé</p>
+						</div>
+
+						<div class="service__price" itemscope itemtype="https://schema.org/PriceSpecification" itemprop="priceSpecification">
+							<h4 itemprop="price">400€ album A4</h4>
+							<span itemprop="description">30 pages recto/verso</span>
+						</div>
+					</article>
+				</div>
+			</section>
+
+			<article class="quote after-slider after-gallery"> <!--? article a la place de div + class after-gallery-->
+				<figure itemscope itemtype="https://schema.org/Quotation" itemprop="subjectOf">
+					<blockquote>
+						<h2 class="quote__text h1" itemprop="citation"> <!--? h1 en h2 + class "h1"-->
+							De manière inconsciente, je crois, je guette un regard, une expression, des traits ou une nostalgie capable de résumer ou plus exactement de révéler une vie
+						</h2>
+					</blockquote>
+					<figcaption class="quote__author" itemprop="author">- Richard Avedon</figcaption>
+				</figure>
+			</article>
+		</main>
+
+		<footer id="contact" class="after-slider after-gallery"> <!--? footer a la place de div + class after-gallery-->
+			<div class="container">
+				<section class="form-container"> <!--? section a la place de div-->
+					<h2>Une question ? Une demande de devis ?</h2> <!--? h2 a la place de h3-->
+					<p> N’hésitez pas à m’écrire ! Je vous répondrais en moins de 24 heures</p>
+					
+					<form action="#" method="post">
+						<label for="nom">Nom</label> <!--? ajout attribut for-->
+						<input type="text" name="nom" id="nom">
+
+						<label for="email">Email</label> <!--? ajout attribut for-->
+						<input type="email" name="email" id="email">
+
+						<label for="message">Message</label> <!--? ajout attribut for-->
+						<textarea name="message" id="message" cols="30" rows="10"></textarea>
+
+						<input type="submit" value="Envoyer">
+					</form>
+				</section>
+
+				<picture class="picture right"> <!--? remplacement de div par picture + redimensionnement img + ajout attribut alt, srcset, sizes, width et height-->
+					<source media="(min-width: 1180px)" srcset="./assets/images/camera.png 419w" sizes="419px">
+					<source media="(min-width: 650px)" srcset="./assets/images/camera-279.png 279w" sizes="279px">
+					<source media="(max-width: 650px)" srcset="./assets/images/camera-159.png 159w" sizes="159px">
+					<img srcset="
+					./assets/images/camera.png 419w,
+					./assets/images/camera-279.png 279w,
+					./assets/images/camera-159.png 159w"
+					sizes="(min-width: 1180px) 418px, (min-width: 650px) 279px, 158px"
+					src="./assets/images/camera.png" alt="Caméra photo" width="419" height="418">
+				</picture>
+			</div>
+
+			<div class="infos container"> <!--? ajout d'une div avec des sections etc -->
+				<section>
+					<h2>Adresse</h2>
+
+					<p itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
+						<span itemprop="streetAddress">68 avenue Alsace-Lorraine</span> <br>
+						<span itemprop="postalCode">33200</span>
+						<span itemprop="addressLocality">Bordeaux</span>
+					</p>
+				</section>
+
+				<section>
+					<h2>Contact</h2>
+
+					<p>
+						téléphone <br>
+						<span itemprop="telephone">05 56 67 78 89</span>
+					</p>
+				</section>
+
+				<section>
+					<h2>Horaires</h2>
+
+					<p itemprop="openingHours" content = "Mo, Tu, We, Th, Fr 10:00-19:00">
+						Du lundi au vendredi <br>
+						de 10h à 19h.
+					</p>
+				</section>
+
+				<section>
+					<h2>Tarifs</h2>
+
+					<p>
+						<span itemprop="priceRange">50€ à 400€</span> <br>
+						<a href="#services">voir mes services</a>
+					</p>
+				</section>
+			</div>
+		</footer>
+
+		<!--?chargement des scripts en fin de body plutot que dans le head-->
+		<script src="./assets/bootstrap/bootstrap.bundle.min.js"></script>
+		<!--?suppression des scripts jQuery pour un script personnalisé-->
+		<script src="./assets/js/app.js" type="module"></script>
+	</body>
+</html>
+
+<!--
+	*min code js et css
+
+	*convertir jpg en webp ?
+-->
