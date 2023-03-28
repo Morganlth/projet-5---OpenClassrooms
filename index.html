@@ -273,8 +273,8 @@
 							<p>Pour capturer vos moments les plus précieux et garder un souvenir impérissable. Je me déplace en Île-de-France pour réaliser vos photos</p>
 						</div>
 
-						<div class="service__price">
-							<h4>350€/demi journée</h4>
+						<div class="service__price" itemscope itemprop="PriceSpecification">
+							<h4 itemprop="price">350€/demi journée</h4>
 							<span>Matériel, déplacement inclus</span>
 						</div>
 					</article>
@@ -285,8 +285,8 @@
 							<p>Vous souhaitez retoucher vos photos pour un résultat professionnel ? Bénéficier d’un rendu optimal pour vos publications</p>
 						</div>
 
-						<div class="service__price">
-							<h4>50€/photo</h4>
+						<div class="service__price" itemscope itemprop="PriceSpecification">
+							<h4 itemprop="price">50€/photo</h4>
 							<span>2 AR par photo</span>
 						</div>
 					</article>
@@ -297,8 +297,8 @@
 							<p>Partagez avec vos proches et vos clients les photos des moments partagés ensemble à travers un album photo personnalisé</p>
 						</div>
 
-						<div class="service__price">
-							<h4>400€ album A4</h4>
+						<div class="service__price" itemscope itemprop="PriceSpecification">
+							<h4 itemprop="price">400€ album A4</h4>
 							<span>30 pages recto/verso</span>
 						</div>
 					</article>
@@ -350,7 +350,7 @@
 				</picture>
 			</div>
 
-			<div class="infos container" itemscope itemtype="https://schema.org/Person"> <!--? ajout d'une div avec des sections etc -->
+			<div class="infos container" itemscope itemtype="https://schema.org/LocalBusiness"> <!--? ajout d'une div avec des sections etc -->
 				<section>
 					<h2>Adresse</h2>
 
@@ -369,16 +369,12 @@
 					</p>
 				</section>
 
-				<section itemscope itemtype="https://schema.org/Schedule">
+				<section>
 					<h2>Horaires</h2>
 
-					<p>
-						<span itemprop="byDay">Du lundi au vendredi</span> <br>
-						de
-						<span itemprop="startTime">10 h</span>
-						à
-						<span itemprop="endTime">19 h</span>
-						.
+					<p itemprop="openingHours" content = "Mo, Tu, We, Th, Fr 10:00-19:00">
+						Du lundi au vendredi <br>
+						de 10h à 19h.
 					</p>
 				</section>
 			</div>
@@ -387,7 +383,8 @@
 		<!--?chargement des scripts en fin de body plutot que dans le head-->
 		<script src="./assets/bootstrap/bootstrap.bundle.min.js"></script>
 		<!--?suppression des scripts jQuery pour un script personnalisé-->
-		<script src="./assets/app.js" type="module"></script>
+		<script src="./js/assets/app.js" type="module"></script>
+		<script src="./assets/js/schema/LocalBusiness.js" type="application/ld+json"></script>
 	</body>
 </html>
 
@@ -395,4 +392,8 @@
 	*min code js et css
 
 	*redonner taille a l'image dans la modale
+
+	*retravailler le dernier script et le comprendre
+
+	*convertir jpg en webp ?
 -->
