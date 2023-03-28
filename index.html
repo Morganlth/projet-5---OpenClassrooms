@@ -121,7 +121,7 @@
 			</div>
 		
 			<div id="about" class="after-slider">
-				<picture class="picture left" itemprop="image"> <!--? remplacement de div par picture + redimensionnement img + ajout attribut alt, srcset, sizes, width et height-->
+				<picture class="picture left"> <!--? remplacement de div par picture + redimensionnement img + ajout attribut alt, srcset, sizes, width et height-->
 					<source media="(min-width: 1180px)" srcset="./assets/images/nina.png 560w" sizes="560px"> <!--! déclenchement gros layout shift-->
 					<source media="(min-width: 650px)" srcset="./assets/images/nina-420.png 420w" sizes="420px">
 					<source media="(max-width: 650px)" srcset="./assets/images/nina-224.png 224w" sizes="224px">
@@ -130,7 +130,7 @@
 					./assets/images/nina-420.png 420w,
 					./assets/images/nina-224.png 224w"
 					sizes="(min-width: 1180px) 559px, (min-width: 650px) 419px, 223px"
-					src="./assets/images/nina.png" alt="moi - Nina Carducci" width="560" height="558">
+					src="./assets/images/nina.png" alt="moi - Nina Carducci" width="560" height="558" itemprop="image">
 				</picture>
 		
 				<article id="about-me" itemprop="description"> <!--? article a la place de div-->
@@ -267,7 +267,7 @@
 				<h2 class="title">Mes services</h2> <!--? h2 a la place de h3-->
 
 				<div class="container">
-					<article class="service" itemscope itemtype="https://schema.org/Service"> <!--? article a la place de div-->
+					<article class="service" itemscope itemtype="https://schema.org/Service" itemprop="makesOffer"> <!--? article a la place de div-->
 						<div class="service__description" itemprop="description">
 							<h3 itemprop="serviceType">Shooting photo</h3>
 							<p>Pour capturer vos moments les plus précieux et garder un souvenir impérissable. Je me déplace en Île-de-France pour réaliser vos photos</p>
@@ -279,7 +279,7 @@
 						</div>
 					</article>
 
-					<article class="service" itemscope itemtype="https://schema.org/Service"> <!--? article a la place de div-->
+					<article class="service" itemscope itemtype="https://schema.org/Service" itemprop="makesOffer"> <!--? article a la place de div-->
 						<div class="service__description" itemprop="description">
 							<h3 itemprop="serviceType">Retouches</h3>
 							<p>Vous souhaitez retoucher vos photos pour un résultat professionnel ? Bénéficier d’un rendu optimal pour vos publications</p>
@@ -291,7 +291,7 @@
 						</div>
 					</article>
 
-					<article class="service" itemscope itemtype="https://schema.org/Service"> <!--? article a la place de div-->
+					<article class="service" itemscope itemtype="https://schema.org/Service" itemprop="makesOffer"> <!--? article a la place de div-->
 						<div class="service__description" itemprop="description">
 							<h3 itemprop="serviceType">Album photos</h3>
 							<p>Partagez avec vos proches et vos clients les photos des moments partagés ensemble à travers un album photo personnalisé</p>
